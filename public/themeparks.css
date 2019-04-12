@@ -49,6 +49,9 @@
     text-align: center;
     line-height: 7normal;
     font-size: 22px;
+    flex-direction: column;  /* make main axis vertical */
+    justify-content: center; /* center items vertically, in this case */
+    align-items: center;     /* center items horizontally, in this case */
   }
 
 
