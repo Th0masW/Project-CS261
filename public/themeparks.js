@@ -137,8 +137,9 @@ var htmlString ="";
 function getClassNumbers() {
   var x = 0;
   var x  = document.getElementsByClassName("red");
-  alert(x);
-  return x;
+  value = x.length;
+  alert(value);
+  return value;
 }
 
 function timeGraph() {
