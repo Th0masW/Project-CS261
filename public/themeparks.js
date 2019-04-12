@@ -134,6 +134,12 @@ var htmlString ="";
 
 }
 
+function getClassNumbers() {
+  var x = 0;
+  var x  = document.getElementsByClassName("red");
+  alert(x);
+  return x;
+}
 
 function timeGraph() {
  // console.log("line 123");
@@ -143,8 +149,9 @@ function timeGraph() {
       console.log("first loop: z = " + z);
       var q= 0;
 
+getClassNumbers();
 
-  for (q = 0; q < z ; q++) {
+  for (q = 0; q < x ; q++) {
     //alert("inner loop: q = " + q);
    var ctx = document.getElementById('red'+ q).getContext('2d');
   
