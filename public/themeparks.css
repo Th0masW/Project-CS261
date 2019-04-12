@@ -166,7 +166,7 @@ a:hover, a:active {
 
   .flex-container .menuitems {
     display: flex;
-    width: 150px;
+    width: 180px;
     margin: 10px;
     text-align: center;
     line-height: 7normal;
