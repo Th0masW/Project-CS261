@@ -138,29 +138,28 @@ function getClassNumbers() {
   var x = 0;
   var x  = document.getElementsByClassName("red");
   value = x.length;
-  alert(value);
-  return value;
+  console.log("class red instances " + value);
+  timeGraph(x);
 }
 
-function timeGraph() {
+function timeGraph(x) {
  // console.log("line 123");
       var numz = 5;
       //document.getElementsByClassName("red");
-      console.log("line 123");
-      console.log("first loop: z = " + z);
+      console.log("first loop: z = " + x.length);
       var q= 0;
+      var numberRed = x.length;
+//var x = getClassNumbers();
+console.log("value or collection? " + numberRed);
 
-var x = getClassNumbers();
-
-  for (q = 0; q < x ; q++) {
-    //alert("inner loop: q = " + q);
+  for (q = 0; q < numberRed ; q++) {
    var ctx = document.getElementById('red'+ q).getContext('2d');
   
    // Draw background
    ctx.fillStyle = 'rgb(255, 51, 0)'; // stright RGB color
    ctx.fillRect(0, 0, 150, 37.5); //location
  
-   //console.log("line 132");
+   console.log("line 132");
    // Draw semi transparent rectangles
    for (var i = 0; i < 10; i++) {
      //ctx.fillStyle = 'rgba(255, 255, 255, ' + (i + 1) / 10 + ')';
