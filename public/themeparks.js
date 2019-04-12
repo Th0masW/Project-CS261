@@ -50,7 +50,7 @@ var htmlString = ""; //init string to empty
 }
 //check to see if string is still empty, that means the park is closed, or there is zero wait
 // time, which is very very unlikely. I was at Magic Kingdom the week of Sept. 11, that was the
-// slowest ever.
+// slowest ever, still had some lines, not much...
 if(htmlString == "") {
    htmlString += "<div class=\"closed\">" + 
   "Looks like the park is closed, or there are no wait times, so get over there ASAP. We kid, pretty sure the park is closed." 

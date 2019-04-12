@@ -1,8 +1,6 @@
 function weather() {
-    //Create a container to hold html
-    var weatherHTML = document.getElementById("weather");
 
-//create listner for button click
+//Define a few things
         var zipCode = '32836'; //easier to change later if need be....
         var xmlhttp = new XMLHttpRequest();
     xmlhttp.onreadystatechange = function() {
@@ -14,7 +12,7 @@ function weather() {
 xmlhttp.open("GET", "https://api.openweathermap.org/data/2.5/weather?zip=" + zipCode + ",us&units=imperial&appid=b15cb1a670b75de35d5bbb19f0754981", true);
 xmlhttp.send(); 
 
-
+//homepfully sitting the time zone works
 function displayWeather(myObj){
 var options = {timeZone: "America/New_York"}; //Set to EST
 var sunUp = myObj.sys.sunrise * 1000;
