@@ -15,7 +15,7 @@ a:hover, a:active {
     background-color:white;
     align-items: center;     /* center items horizontally, in this case */
     justify-content: center;
-    align-items: flex-start;
+    align-items: stretch;
   }
   
   .flex-container .box {
