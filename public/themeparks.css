@@ -42,13 +42,13 @@
   }
 
   .flex-container .menuitems {
-    background-color:white;
+    background-color:rgb(54, 49, 133);
     display: flex;
     width: 200px;
     margin: 10px;
     text-align: center;
     line-height: 7normal;
-    font-size: 20px;
+    font-size: 22px;
     flex-direction: column;  /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
     align-items: center;     /* center items horizontally, in this case */
