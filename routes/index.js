@@ -5,17 +5,17 @@ const Themeparks = require('themeparks');
 module.exports = function(app) {
 
   app.get('/epcot', function(req, res) {
-    let epcot = new Themeparks.Parks.WaltDisneyWorldEpcot();
+     epcot = new Themeparks.Parks.WaltDisneyWorldEpcot();
       res.render('index', {title: 'EPCOT Attractions Wait Times'});
   });
 
   app.get('/ak', function(req, res) {
-    let epcot = new Themeparks.Parks.WaltDisneyWorldEpcot();
+     epcot = new Themeparks.Parks.WaltDisneyWorldEpcot();
       res.render('index', {title: 'Animal Kingdom Attractions Wait Times'});
   });
 
   app.get('/hs', function(req, res) {
-    let epcot = new Themeparks.Parks.WaltDisneyWorldEpcot();
+     epcot = new Themeparks.Parks.WaltDisneyWorldEpcot();
       res.render('index', {title: 'Hollywood Studios Attractions Wait Times'});
   });
 
@@ -25,8 +25,8 @@ app.get('/', function(req, res) {
 });
 
 app.get('/getridetimes', function(req,res) {
-    let park = req.query.park;
-    let myThemePark = setThemePark(park);
+     park = req.query.park;
+     myThemePark = pickThemePark(park);
     myThemePark.GetWaitTimes().then(function(rides) {
       res.json(rides);
     })
@@ -34,8 +34,8 @@ app.get('/getridetimes', function(req,res) {
 };
 
 
-function setThemePark(park){
-    let myPark = "";
+function pickThemePark(park){
+     myPark = "";
     switch(park){
       case "":
         myPark = new Themeparks.Parks.WaltDisneyWorldMagicKingdom();

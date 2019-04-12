@@ -1,7 +1,7 @@
 
 function getThemeParkTimes() {
 
-    let xhttp = new XMLHttpRequest();
+     xhttp = new XMLHttpRequest();
   
     // build the URL for the API call
     str = window.location.pathname;
