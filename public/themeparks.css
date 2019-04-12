@@ -1,0 +1,69 @@
+
+
+.flex-container {
+    display: flex;
+    flex-flow: row wrap;
+    background-color:white;
+    justify-content: center;
+  }
+  
+  .flex-container .box {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    text-align: left;
+    line-height: 7normal;
+    font-size: 18px;
+  }
+
+  .flex-container .banner {
+    background-color:yellow;
+    width: 100%;
+    height: 30px;
+    justify-content: center;
+    flex-flow: row wrap;
+    line-height: 7normal;
+    font-size: 18px;
+    display: flex;
+
+  }
+
+  .flex-container .menu {
+    background-color:red;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    text-align: center;
+    flex-flow: row wrap;
+    line-height: 7normal;
+  
+  }
+
+  .flex-container .menuitems {
+    background-color:greenyellow;
+    width: 180px;
+    margin: 10px;
+    text-align: center;
+    line-height: 7normal;
+    font-size: 22px;
+  }
+
+
+  .flex-container .red {
+    background-color: #f1f1f1;
+    width: 300px;
+    margin: 10px;
+    text-align: left;
+    line-height: 7normal;
+    font-size: 18px;
+    color: red;
+  }
+
+  .flex-container .weatherBox {
+    background-color: white;
+     margin: 5px;
+    text-align: left;
+    line-height: 7normal;
+    font-size: 16px;
+    color:black;
+  }

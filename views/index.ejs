@@ -1,0 +1,25 @@
+<% include partials/header %>
+<script>getThemeParkInfo()</script>
+<body>
+        <% include partials/banner %>
+    <h1>Heyaa</h1>
+
+<hr>
+<h2>Current Wait Times</h2>   
+<div class="flex-container" id="ridetimes">
+Loading....
+</div> 
+<hr>
+
+
+ <h2>Attractions with no wait times.</h2>   
+<div class="flex-container" id="zer0ridetimes">Loading...</div>
+<hr>
+
+<h2>Attractions that are closed (maybe forever..)</h2>   
+<div class="flex-container" id="inactiveRides">Loading...</div>
+<hr>
+
+<% include partials/footer %>
+</body>
+</html>
