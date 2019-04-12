@@ -10,7 +10,7 @@ function getThemeParkTimes() {
     console.log(park);
     url = "//" + window.location.host + base_url + "/getridetimes";
     params = '?park=' + park;
-    
+    //Usual request, nothing to see here
     xhttp.open("GET", url + params, true);
     //console.log(url);
     xhttp.onreadystatechange = function() {
@@ -23,12 +23,13 @@ function getThemeParkTimes() {
  
   }
 function requestOutput(response){
-var htmlString = "";
+var htmlString = ""; //init string to empty
 
   for(i=0; i < response.length;i++) {
+    //have to create variable, fails if just using value from response JavaScript...
+
+
     var rideActive = response[i].active;
-    var rideWaitTime = response[i].waitTime;
-    var z = 1;
     //console.log(" Line 57");
     if(response[i].waitTime > 60 && rideActive){
     htmlString += "<div class=\"red\">" + 
@@ -47,19 +48,17 @@ var htmlString = "";
     + "</div>"; 
     }
 }
-
+//check to see if string is still empty, that means the park is closed, or there is zero wait
+// time, which is very very unlikely. I was at Magic Kingdom the week of Sept. 11, that was the
+// slowest ever.
 if(htmlString == "") {
- 
-  htmlString += "<div class=\"box\">" + 
+   htmlString += "<div class=\"closed\">" + 
   "Looks like the park is closed, or there are no wait times, so get over there ASAP. We kid, pretty sure the park is closed." 
   + "</div>"; 
-
   }
-
  document.getElementById("ridetimes").innerHTML = htmlString;
 
 var htmlString ="";
-
   for(i=0; i < response.length;i++) {
     var rideActive = response[i].active;
     if(response[i].waitTime < 5 && rideActive){
@@ -70,19 +69,15 @@ var htmlString ="";
     }
     //console.log("end of loop #: " + i);
   }
-
   if(htmlString == "") {
- 
-    htmlString += "<div class=\"box\">" + 
+     htmlString += "<div class=\"closed\">" + 
     "Looks like the park is closed, or there are no wait times, so get over there ASAP. We kid, pretty sure the park is closed." 
     + "</div>"; 
-  
     }
     document.getElementById("zer0ridetimes").innerHTML = htmlString;
-//console.log(htmlString);
 
 var htmlString ="";
-//console.log("Line  95");
+    // Show all closed or inactive rides
   for(i=0; i < response.length;i++) {
     var rideActive = response[i].active;
 
@@ -93,9 +88,6 @@ var htmlString ="";
     "Waiting time: " + response[i].waitTime 
     + "</div>";
     }
-    //console.log("end of loop #: " + i);
   }
     document.getElementById("inactiveRides").innerHTML = htmlString;
-//console.log(htmlString);
-
 }
