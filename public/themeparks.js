@@ -150,7 +150,7 @@ function timeGraph() {
       console.log("first loop: z = " + z);
       var q= 0;
 
-getClassNumbers();
+var x = getClassNumbers();
 
   for (q = 0; q < x ; q++) {
     //alert("inner loop: q = " + q);
