@@ -30,16 +30,77 @@ a:hover, a:active {
   }
 
   .flex-container .red {
-    background-color: white;
+    background-color: red;
     width: 300px;
     margin: 10px;
     padding:8px;
-    text-align: left;
+    text-align: center;
     line-height: 7normal;
     font-size: 18px;
-    color:black;
-    border: 1px solid red;
-    border-radius: 12px;
+    color:white;
+    border: 1px solid rgb(112, 1, 1);
+    border-radius: 10px;
+    align-items: center;     
+    align-content: center;
+    justify-content: center;
+  }
+
+  .flex-container .orange {
+    background-color:rgb(255, 123, 0);
+    width: 300px;
+    margin: 10px;
+    padding:8px;
+    text-align: center;
+    line-height: 7normal;
+    font-size: 18px;
+    color:white;
+    border: 1px solid rgb(94, 46, 1);
+    border-radius: 10px;
+  }
+
+  .flex-container .green {
+    background-color: rgb(6, 168, 0);
+    width: 300px;
+    margin: 10px;
+    padding:8px;
+    text-align: center;
+    line-height: 7normal;
+    font-size: 18px;
+    color:white;
+    border: 1px solid rgb(2, 70, 0);
+    border-radius: 10px;
+  }
+
+  .flex-container .blue {
+    background-color: rgb(32, 32, 245);
+    width: 300px;
+    margin: 10px;
+    padding:8px;
+    text-align: center;
+    line-height: 7normal;
+    font-size: 18px;
+    color:white;
+    border: 1px solid rgb(12, 1, 112);
+    border-radius: 10px;
+    align-items: center;     
+    align-content: center;
+    justify-content: center;
+  }
+
+  .flex-container .gray {
+    background-color: rgb(76, 76, 92);
+    width: 300px;
+    margin: 10px;
+    padding:8px;
+    text-align: center;
+    line-height: 7normal;
+    font-size: 18px;
+    color:white;
+    border: 1px solid rgb(2, 2, 2);
+    border-radius: 10px;
+    align-items: center;     
+    align-content: center;
+    justify-content: center;
   }
 
   .flex-container .banner {
