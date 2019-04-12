@@ -42,7 +42,7 @@
   }
 
   .flex-container .menuitems {
-    background-color:rgb(41, 8, 187);
+    background-color:white;
     display: flex;
     width: 200px;
     margin: 10px;
