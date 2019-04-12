@@ -1,7 +1,7 @@
 <% include partials/header %>
 
 <script>getThemeParkInfo()</script>
-<body>
+<body onload="timeGraph()">
         <% include partials/banner %>
 
 <hr>
@@ -19,6 +19,7 @@ Loading....
 <h2>Attractions that are closed (maybe forever..)</h2>   
 <div class="flex-container" id="inactiveRides">Loading...</div>
 <hr>
+
 
 <% include partials/footer %>
 </body>

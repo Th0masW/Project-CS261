@@ -135,19 +135,19 @@ var htmlString ="";
 }
 
 
-
 function timeGraph() {
  // console.log("line 123");
       var numz = 5;
       //document.getElementsByClassName("red");
       console.log("line 123");
-      alert("first loop: z = " + z);
+      console.log("first loop: z = " + z);
       var q= 0;
-  for (q = 0; q < 3 ; q++) {
-    alert("inner loop: q = " + q);
-   var ctx = document.getElementById('red0').getContext('2d');
- 
- 
+
+
+  for (q = 0; q < z ; q++) {
+    //alert("inner loop: q = " + q);
+   var ctx = document.getElementById('red'+ q).getContext('2d');
+  
    // Draw background
    ctx.fillStyle = 'rgb(255, 51, 0)'; // stright RGB color
    ctx.fillRect(0, 0, 150, 37.5); //location

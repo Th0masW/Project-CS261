@@ -2,8 +2,6 @@
 a:link, a:visited {
   background-color: #f44336;
   color: white;
-
-
   text-decoration: none;
   display: inline-block;
 }
@@ -17,15 +15,31 @@ a:hover, a:active {
     background-color:white;
     align-items: center;     /* center items horizontally, in this case */
     justify-content: center;
+    align-items: flex-start;
   }
   
   .flex-container .box {
     background-color: #f1f1f1;
     width: 300px;
     margin: 10px;
+    padding: 10px;
     text-align: left;
     line-height: 7normal;
     font-size: 18px;
+
+  }
+
+  .flex-container .red {
+    background-color: white;
+    width: 300px;
+    margin: 10px;
+    padding:8px;
+    text-align: left;
+    line-height: 7normal;
+    font-size: 18px;
+    color:black;
+    border: 1px solid red;
+    border-radius: 12px;
   }
 
   .flex-container .banner {
@@ -66,17 +80,6 @@ a:hover, a:active {
     flex-direction: column;  /* make main axis vertical */
     justify-content: center; /* center items vertically, in this case */
     align-items: center;     /* center items horizontally, in this case */
-  }
-
-
-  .flex-container .red {
-    background-color: #f1f1f1;
-    width: 300px;
-    margin: 10px;
-    text-align: left;
-    line-height: 7normal;
-    font-size: 18px;
-    color: red;
   }
 
   .flex-container .weatherBox {
