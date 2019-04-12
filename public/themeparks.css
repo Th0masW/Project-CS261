@@ -17,14 +17,17 @@
   }
 
   .flex-container .banner {
-    background-color:yellow;
+    background-color: #070000;
     width: 100%;
     height: 30px;
+    flex-direction: column;  /* make main axis vertical */
+    align-items: center;     /* center items horizontally, in this case */
     justify-content: center;
     flex-flow: row wrap;
     line-height: 7normal;
     font-size: 18px;
     display: flex;
+    color: white;
 
   }
 
