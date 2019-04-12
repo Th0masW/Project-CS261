@@ -1,18 +1,16 @@
 
-
 a:link, a:visited {
   background-color: #f44336;
   color: white;
-  padding: 14px 25px;
-  text-align: center;
+
+
   text-decoration: none;
   display: inline-block;
 }
 
 a:hover, a:active {
   background-color: red;
-
-
+}
 .flex-container {
     display: flex;
     flex-flow: row wrap;
@@ -45,8 +43,11 @@ a:hover, a:active {
   }
 
   .flex-container .menu {
+    background-color: #f44336;
     display: flex;
     width: 100%;
+    height: 50px;
+    margin: 10px;
     justify-content: space-between;
     text-align: center;
     flex-flow: row wrap;
@@ -56,7 +57,7 @@ a:hover, a:active {
 
   .flex-container .menuitems {
     display: flex;
-    width: 200px;
+
     margin: 10px;
     text-align: center;
     line-height: 7normal;
